@@ -1,6 +1,7 @@
 /*Criar uma view usuarios_com_mais_de_um_emprestimo que mostre os 
 usuários que já emprestaram mais de 1 livro.*/
 
+create view "usuarios_com_mais_de_um_emprestimo" as 
 select 
 	u.nome as "Nome do usuário" , 
 	count(e.id) as "Mais de 1 livro"
